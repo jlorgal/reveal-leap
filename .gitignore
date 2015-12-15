@@ -1,0 +1,14 @@
+node_modules/
+coverage/
+report/
+site/
+target/
+.idea/
+.DS_Store
+*.log
+*.pyc
+python_provisioner/env/*
+python_provisioner/env.sh
+*/nohup.out
+delivery/deploy/roles/*
+
