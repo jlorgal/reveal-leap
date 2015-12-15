@@ -72,28 +72,12 @@
 
     /*
     if (frame.hands.length === 1 && frame.fingers.length === 0) {
-      Reveal.toggleOverview(true);
-    } else if (frame.hands.length === 1 && frame.fingers.length > 3) {
-      Reveal.toggleOverview(false);
-    }
-    */
-    /*
-    if (frame.hands.length === 1 && frame.fingers.length === 0) {
       if (!Reveal.isOverview()) {
         Reveal.toggleOverview(true);
       }
     } else {
       if (Reveal.isOverview()) {
         Reveal.toggleOverview(false);
-      }
-    }
-    */
-    /*
-    if (frame.hands.length === 1) {
-      if (!oneHandToggling && frame.fingers.length > 3) {
-        oneHandToggling = true;
-      } else if (oneHandToggling && frame.fingers.length === 0) {
-        Reveal.toggleOverview(true);
       }
     }
     */
