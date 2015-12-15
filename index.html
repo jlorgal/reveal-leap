@@ -41,6 +41,40 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
+					<h1>Cool events</h1>
+					<table>
+						<thead>
+							<tr>
+								<th>Monday</th>
+								<th>Tuesday</th>
+								<th>Wednesday</th>
+								<th>Thursday</th>
+								<th>Friday</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+					
+				</section>
+
+
+				<section>
 					<h1>Reveal.js</h1>
 					<h3>The HTML Presentation great Framework</h3>
 					<p>
@@ -393,6 +427,12 @@ Reveal.addEventListener( 'customevent', function() {
 				center: true,
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				
+				leap: {
+					naturalSwipe   : false,    // Invert swipe gestures
+					pointerOpacity : 0.5,      // Set pointer opacity to 0.5
+					pointerColor   : '#d80000' // Red pointer
+				},
 
 				// Optional reveal.js plugins
 				dependencies: [
@@ -401,7 +441,8 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/leap-motion/leap-motion.js', async: true }
 				]
 			});
 
