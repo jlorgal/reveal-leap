@@ -82,16 +82,16 @@
     }
     */
 
-    /*
+    
     // Pointer: 1 to 2 fingers. Strictly one finger works but may cause innaccuracies.
     // The innaccuracies were observed on a development model and may not be an issue with consumer models.
     if( frame.fingers.length > 0 && frame.fingers.length < 3 ) {
       // Invert direction and multiply by 3 for greater effect.
-      //size = -3 * frame.fingers[0].tipPosition[2];
+      size = -3 * frame.fingers[0].tipPosition[2];
 
-      //if( size < config.pointerSize ) {
-      //  size = config.pointerSize;
-      //}
+      if( size < config.pointerSize ) {
+        size = config.pointerSize;
+      }
 
       pointer.style.width        = size     + 'px';
       pointer.style.height       = size     + 'px';
@@ -130,7 +130,7 @@
       entered                  = false;
       pointer.style.visibility = 'hidden';
     }
-    */
+    
 
     // Gestures
     if( frame.gestures.length > 0 && (now - lastGesture) > config.gestureDelay ) {
